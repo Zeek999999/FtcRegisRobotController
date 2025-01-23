@@ -14,6 +14,11 @@ public class RaiderMain extends LinearOpMode {
 
         waitForStart();
 
+        bot.leftFront.setPower(1);
+        bot.rightFront.setPower(1);
+        bot.leftBack.setPower(1);
+        bot.rightBack.setPower(1);
+
         while (opModeIsActive()) {
             double forwardPower = gamepad1.left_stick_y;
             double rightPower = gamepad1.left_stick_x;
